@@ -15,19 +15,21 @@ int main(int argc, char *argv[]) {
 			}
 	
 			if(sum==n) {
-				printf(" = 1");
+				printf("%d = 1",n);
 				for(i=2; i<n; i++) {
 					if(n%i==0)
 						printf(" + %d", i);
 				}
 				printf("\n");
 			}
-			else
-				printf(" is NOT perfect\n", &n);
+			else{
+				printf("%d is NOT perfect\n", n); //%d가 없었었고 n이 아니라 &n으로 표현되어 있었어. 
+			}
 		}
 		else
 			printf("\n");
 		sum=0;
 	}while(n!=-1);
+	
 	return 0;
 }
