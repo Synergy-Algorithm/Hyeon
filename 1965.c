@@ -15,7 +15,6 @@ int main(int argc, char *argv[]) {
 	if(n>=1 && n<=1000){
 		for(i=0; i<n; i++)
 			scanf("%d", &box[i]);
-	}
 
 	for(i=n-1; i>=0; i--){
 		count[i]=1;
@@ -33,5 +32,6 @@ int main(int argc, char *argv[]) {
 			max=count[i];
 	}
 	printf("%d", max);
+	}
 	return 0;
 }
